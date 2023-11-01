@@ -8,6 +8,7 @@ import { OrderComponent } from './component/order/order.component';
 import { CreateditOrderComponent } from './component/order/createdit-order/createdit-order.component';
 import { MessageComponent } from './component/message/message.component';
 import { CreateditMessageComponent } from './component/message/createdit-message/createdit-message.component';
+import { ReportUserComponent } from './component/user/report-user/report-user.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
     children: [
       { path: 'new', component: CreateditUserComponent },
       { path: 'edition/:id', component: CreateditUserComponent },
+      {path:'search',component:ReportUserComponent}
     ],
   },
   {
